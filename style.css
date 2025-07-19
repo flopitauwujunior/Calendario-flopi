@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d0f0ff; /* Fondo celeste */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo,
+.subtitulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  color: #000; /* Títulos negros */
+  margin-top: 20px;
+}
+
+.frase-motivacional {
+  margin-top: -10px;
+  font-style: italic;
+  color: #444;
+  text-align: center;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 90vw;
+  max-width: 1000px;
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.dia {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100px;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.dia:hover {
+  background-color: #e0f7ff;
+}
+
+.dia .numero {
+  font-weight: bold;
+}
+
+.dia.hoy {
+  background-color: #b3e0ff;
+  border: 2px solid #007acc;
+}
+
+.evento {
+  font-size: 0.8em;
+  margin-top: 5px;
+  background: #ffe3f3;
+  padding: 2px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.cerrar {
+  float: right;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90vw;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  background-color: #ffffffcc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+
+td[contenteditable="true"] {
+  background-color: #fff9fd;
+}
+
+.botones-horario {
+  margin-bottom: 40px;
+}
+
+.botones-horario button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #a4d7ff;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.botones-horario button:hover {
+  background-color: #89cfff;
+}
