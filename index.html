@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌺 Mi Calendario 🌺</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="titulo">🌺 Mi Calendario 🌺</h1>
+  <p class="frase-motivacional" id="fraseMotivacional"></p>
+
+  <div id="calendar"></div>
+
+  <div id="eventoModal" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <h2>Agregar/Editar Evento</h2>
+      <input type="text" id="eventoTexto" placeholder="¿Qué harás este día?">
+      <button id="guardarEvento">Guardar</button>
+    </div>
+  </div>
+
+  <h2 class="subtitulo">🌺 Horario Semanal 🌺</h2>
+  <div id="horario">
+    <table>
+      <thead>
+        <tr>
+          <th>Hora</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+        </tr>
+      </thead>
+      <tbody id="tablaHorario"></tbody>
+    </table>
+    <div class="botones-horario">
+      <button id="agregarFila">➕ Agregar hora</button>
+      <button id="eliminarFila">➖ Eliminar hora</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
